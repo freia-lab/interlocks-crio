@@ -4,44 +4,4 @@
 	<Property Name="NI.Lib.SourceVersion" Type="Int">335577088</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
-	<Item Name="Actual Loop Period" Type="Variable">
-		<Property Name="featurePacks" Type="Str">Network</Property>
-		<Property Name="Network:UseBinding" Type="Str">False</Property>
-		<Property Name="Network:UseBuffering" Type="Str">False</Property>
-		<Property Name="numTypedefs" Type="UInt">0</Property>
-		<Property Name="type" Type="Str">Network</Property>
-		<Property Name="typeDesc" Type="Bin">&amp;!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!!F)1!!!"1!A!!!!!!"!!V!"Q!'65FO&gt;$-S!!!"!!!!!!!!!!!!!!!!!!!</Property>
-	</Item>
-	<Item Name="Buffer Backlog" Type="Variable">
-		<Property Name="featurePacks" Type="Str">Network</Property>
-		<Property Name="Network:UseBinding" Type="Str">False</Property>
-		<Property Name="Network:UseBuffering" Type="Str">False</Property>
-		<Property Name="numTypedefs" Type="UInt">0</Property>
-		<Property Name="type" Type="Str">Network</Property>
-		<Property Name="typeDesc" Type="Bin">&amp;!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!!J*1!!!"1!A!!!!!!"!!V!#A!'2'^V9GRF!!!"!!!!!!!!!!!!!!!!!!!!!!!!</Property>
-	</Item>
-	<Item Name="Contiguous Memory" Type="Variable">
-		<Property Name="featurePacks" Type="Str">Network</Property>
-		<Property Name="Network:UseBinding" Type="Str">False</Property>
-		<Property Name="Network:UseBuffering" Type="Str">False</Property>
-		<Property Name="numTypedefs" Type="UInt">0</Property>
-		<Property Name="type" Type="Str">Network</Property>
-		<Property Name="typeDesc" Type="Bin">&amp;!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!!J*1!!!"1!A!!!!!!"!!V!#A!'2'^V9GRF!!!"!!!!!!!!!!!!!!!!!!!!!!!!</Property>
-	</Item>
-	<Item Name="CPU Usage" Type="Variable">
-		<Property Name="featurePacks" Type="Str">Network</Property>
-		<Property Name="Network:UseBinding" Type="Str">False</Property>
-		<Property Name="Network:UseBuffering" Type="Str">False</Property>
-		<Property Name="numTypedefs" Type="UInt">0</Property>
-		<Property Name="type" Type="Str">Network</Property>
-		<Property Name="typeDesc" Type="Bin">&amp;!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!!J*1!!!"1!A!!!!!!"!!V!#A!'2'^V9GRF!!!"!!!!!!!!!!!!!!!!!!!!!!!!</Property>
-	</Item>
-	<Item Name="System Time" Type="Variable">
-		<Property Name="featurePacks" Type="Str">Network</Property>
-		<Property Name="Network:UseBinding" Type="Str">False</Property>
-		<Property Name="Network:UseBuffering" Type="Str">False</Property>
-		<Property Name="numTypedefs" Type="UInt">0</Property>
-		<Property Name="type" Type="Str">Network</Property>
-		<Property Name="typeDesc" Type="Bin">&amp;!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!!U-!!!!"1!A!!!!!!"!""!6!!'#62J&lt;76T&gt;'&amp;N=!!"!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</Property>
-	</Item>
 </Library>
