@@ -4,11 +4,14 @@
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
 	<Property Name="varPersistentID:{06106C3D-FBE7-491C-AC10-EF39403859A7}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/System Time</Property>
-	<Property Name="varPersistentID:{132775EB-F929-4D19-B4BE-3116973A4E07}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Update Configuration</Property>
+	<Property Name="varPersistentID:{132775EB-F929-4D19-B4BE-3116973A4E07}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Cfg Update</Property>
+	<Property Name="varPersistentID:{16B9421D-665A-4811-843C-7B5264874CE6}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Cfg Nr Samples Post Trig</Property>
 	<Property Name="varPersistentID:{21649EBA-4F71-4D62-8941-FBBF0A6BCCC4}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/PM Array Number</Property>
+	<Property Name="varPersistentID:{54BC0E04-918C-4F93-B976-EEFD2C562932}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Cfg Input Active</Property>
 	<Property Name="varPersistentID:{559B6307-3129-406F-AF21-252679EB02E8}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Contiguous Memory</Property>
-	<Property Name="varPersistentID:{6D9AFA72-20D0-4D82-ACB7-45F159C038A5}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Fetch PM Array</Property>
-	<Property Name="varPersistentID:{78840EBD-E1DA-4A45-A6B3-185B377540D1}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/PM_Array</Property>
+	<Property Name="varPersistentID:{6D9AFA72-20D0-4D82-ACB7-45F159C038A5}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/PM Fetch Array</Property>
+	<Property Name="varPersistentID:{7533BBE6-2FF0-4662-B396-2E1E9B424B22}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Cfg Data Rate</Property>
+	<Property Name="varPersistentID:{78840EBD-E1DA-4A45-A6B3-185B377540D1}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/PM Array</Property>
 	<Property Name="varPersistentID:{8FB9D805-1AD6-495A-8A19-C2AF43DB3137}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Actual Loop Period</Property>
 	<Property Name="varPersistentID:{9DE37EF7-5A19-4398-BE6E-1D682B5B1E5C}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Current State</Property>
 	<Property Name="varPersistentID:{C86FD728-2C8B-4D3E-B8BA-B7389D205063}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/ADC Data</Property>
@@ -187,6 +190,7 @@ InactivityTimeout 60
 			<Item Name="RT Loop - Watchdog.vi" Type="VI" URL="../RT Loops/RT Loop - Watchdog.vi"/>
 		</Item>
 		<Item Name="Type Definitions" Type="Folder">
+			<Item Name="EPICS Configuration.ctl" Type="VI" URL="../controls/EPICS Configuration.ctl"/>
 			<Item Name="Error Type.ctl" Type="VI" URL="../controls/Error Type.ctl"/>
 			<Item Name="FPGA VI Reference.ctl" Type="VI" URL="../controls/FPGA VI Reference.ctl"/>
 			<Item Name="Acquisition and Logging Configuration_old.ctl" Type="VI" URL="../controls/Acquisition and Logging Configuration_old.ctl"/>
@@ -206,6 +210,7 @@ InactivityTimeout 60
 </CLIPDeclarationSet></Property>
 				<Property Name="NI.LV.FPGA.CompileConfigString" Type="Str">cRIO-9114/Clk40/falsefalseFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSCRIO_9114FPGA_TARGET_FAMILYVIRTEX5TARGET_TYPEFPGA</Property>
 				<Property Name="NI.LV.FPGA.Version" Type="Int">6</Property>
+				<Property Name="niFpga_TopLevelVIID" Type="Path">/C/Users/Marcus/Projekt/Freia/freia-interlocks-crio/FPGA/VIs/FPGA Read Sample.vi</Property>
 				<Property Name="Resource Name" Type="Str">RIO0</Property>
 				<Property Name="SWEmulationSubMode" Type="UInt">0</Property>
 				<Property Name="SWEmulationVIPath" Type="Path"></Property>
@@ -1192,6 +1197,42 @@ InactivityTimeout 60
 						<Property Name="TargetName" Type="Str">FPGA Target</Property>
 						<Property Name="TopLevelVI" Type="Ref">/RT CompactRIO Target/Chassis/FPGA Target/FPGA Main.vi</Property>
 					</Item>
+					<Item Name="FPGA Read Sample" Type="{F4C5E96F-7410-48A5-BB87-3559BC9B167F}">
+						<Property Name="AllowEnableRemoval" Type="Bool">false</Property>
+						<Property Name="BuildSpecDecription" Type="Str"></Property>
+						<Property Name="BuildSpecName" Type="Str">FPGA Read Sample</Property>
+						<Property Name="Comp.BitfileName" Type="Str">FreiaInterlock_FPGATarget_FPGAReadSample_31taDZ2k7ZE.lvbitx</Property>
+						<Property Name="Comp.CustomXilinxParameters" Type="Str"></Property>
+						<Property Name="Comp.MaxFanout" Type="Int">-1</Property>
+						<Property Name="Comp.RandomSeed" Type="Bool">false</Property>
+						<Property Name="Comp.Version.Build" Type="Int">0</Property>
+						<Property Name="Comp.Version.Fix" Type="Int">0</Property>
+						<Property Name="Comp.Version.Major" Type="Int">1</Property>
+						<Property Name="Comp.Version.Minor" Type="Int">0</Property>
+						<Property Name="Comp.VersionAutoIncrement" Type="Bool">false</Property>
+						<Property Name="Comp.Vivado.EnableMultiThreading" Type="Bool">true</Property>
+						<Property Name="Comp.Vivado.OptDirective" Type="Str"></Property>
+						<Property Name="Comp.Vivado.PhysOptDirective" Type="Str"></Property>
+						<Property Name="Comp.Vivado.PlaceDirective" Type="Str"></Property>
+						<Property Name="Comp.Vivado.RouteDirective" Type="Str"></Property>
+						<Property Name="Comp.Vivado.RunPowerOpt" Type="Bool">false</Property>
+						<Property Name="Comp.Vivado.Strategy" Type="Str">Default</Property>
+						<Property Name="Comp.Xilinx.DesignStrategy" Type="Str">timing</Property>
+						<Property Name="Comp.Xilinx.MapEffort" Type="Str">high(timing)</Property>
+						<Property Name="Comp.Xilinx.ParEffort" Type="Str">high</Property>
+						<Property Name="Comp.Xilinx.SynthEffort" Type="Str">high</Property>
+						<Property Name="Comp.Xilinx.SynthGoal" Type="Str">speed</Property>
+						<Property Name="Comp.Xilinx.UseRecommended" Type="Bool">true</Property>
+						<Property Name="DefaultBuildSpec" Type="Bool">true</Property>
+						<Property Name="DestinationDirectory" Type="Path">FPGA Bitfiles</Property>
+						<Property Name="ProjectPath" Type="Path">/C/Users/Marcus/Projekt/Freia/freia-interlocks-crio/Freia Interlock.lvproj</Property>
+						<Property Name="RelativePath" Type="Bool">true</Property>
+						<Property Name="RunWhenLoaded" Type="Bool">false</Property>
+						<Property Name="SupportDownload" Type="Bool">true</Property>
+						<Property Name="SupportResourceEstimation" Type="Bool">true</Property>
+						<Property Name="TargetName" Type="Str">FPGA Target</Property>
+						<Property Name="TopLevelVI" Type="Ref">/RT CompactRIO Target/Chassis/FPGA Target/FPGA/VIs/FPGA Read Sample.vi</Property>
+					</Item>
 				</Item>
 			</Item>
 		</Item>
@@ -1199,6 +1240,7 @@ InactivityTimeout 60
 		<Item Name="Variables.lvlib" Type="Library" URL="../Variables.lvlib"/>
 		<Item Name="RT Main FPGA Test.vi" Type="VI" URL="../RT Main FPGA Test.vi"/>
 		<Item Name="FPGA Control Message.ctl" Type="VI" URL="../controls/FPGA Control Message.ctl"/>
+		<Item Name="RT Loop - EPICS Control.vi" Type="VI" URL="../RT Loops/RT Loop - EPICS Control.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Array Size(s)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Array Size(s)__ogtk.vi"/>
@@ -1375,9 +1417,6 @@ InactivityTimeout 60
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Global - RT Stream Connections.vi" Type="VI" URL="../Globals/Global - RT Stream Connections.vi"/>
-			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
