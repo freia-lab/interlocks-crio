@@ -1,0 +1,26 @@
+Overview of Freia Interlocks cRIO SW
+
+Message queues
+--------------
+Message Handler
+Used to send messages to the Message Handling Loop
+
+FPGA Subsystem
+Used to send control messages to the Interlock and Post Mortem Data loop for FPGA control.
+
+RT Loops
+--------
+EPICS Control
+Polls EPICS variables and creates control messages in the Message Handler queue
+
+Message handling
+Receives and processes messages from the Message Handler queue. Generates FPGA Subsystem control messages.
+
+System Health and FPGA Monitoring
+Monitors RT system FPGA status and updates EPICS variables.
+
+Watchdog loop
+Initializes and pets watchdog timer.
+
+Interlock and Post Mortem Data
+Manages  FPGA data DMA reception and buffer.
