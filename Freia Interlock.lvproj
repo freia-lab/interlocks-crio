@@ -6,6 +6,7 @@
 	<Property Name="varPersistentID:{06106C3D-FBE7-491C-AC10-EF39403859A7}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/System Time</Property>
 	<Property Name="varPersistentID:{132775EB-F929-4D19-B4BE-3116973A4E07}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Cfg Update</Property>
 	<Property Name="varPersistentID:{16B9421D-665A-4811-843C-7B5264874CE6}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Cfg Nr Samples Post Trig</Property>
+	<Property Name="varPersistentID:{17E1E09B-D8D6-4E79-90EF-6212EBDBE761}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Arm</Property>
 	<Property Name="varPersistentID:{21649EBA-4F71-4D62-8941-FBBF0A6BCCC4}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/PM Array Number</Property>
 	<Property Name="varPersistentID:{54BC0E04-918C-4F93-B976-EEFD2C562932}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Cfg Input Active</Property>
 	<Property Name="varPersistentID:{559B6307-3129-406F-AF21-252679EB02E8}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Contiguous Memory</Property>
@@ -81,7 +82,6 @@
 			</Item>
 			<Item Name="EPICS Configuration.ctl" Type="VI" URL="../controls/EPICS Configuration.ctl"/>
 			<Item Name="Master Configuration.ctl" Type="VI" URL="../controls/Master Configuration.ctl"/>
-			<Item Name="TDMS Properties.ctl" Type="VI" URL="../controls/TDMS Properties.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
@@ -214,7 +214,6 @@ InactivityTimeout 60
 </CLIPDeclarationSet></Property>
 				<Property Name="NI.LV.FPGA.CompileConfigString" Type="Str">cRIO-9114/Clk40/falsefalseFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSCRIO_9114FPGA_TARGET_FAMILYVIRTEX5TARGET_TYPEFPGA</Property>
 				<Property Name="NI.LV.FPGA.Version" Type="Int">6</Property>
-				<Property Name="niFpga_TopLevelVIID" Type="Path">/C/Users/Marcus/Projekt/Freia/freia-interlocks-crio/FPGA Main.vi</Property>
 				<Property Name="Resource Name" Type="Str">RIO0</Property>
 				<Property Name="SWEmulationSubMode" Type="UInt">0</Property>
 				<Property Name="SWEmulationVIPath" Type="Path"></Property>
@@ -1153,11 +1152,7 @@ InactivityTimeout 60
 					<Property Name="cRIOModule.Initial Line Direction" Type="Str">00000000000000000000000000000000</Property>
 					<Property Name="FPGA.PersistentID" Type="Str">{2CDAD35B-36DB-4F36-A16E-C029DDAAEC9B}</Property>
 				</Item>
-				<Item Name="Dependencies" Type="Dependencies">
-					<Item Name="vi.lib" Type="Folder">
-						<Item Name="lvSimController.dll" Type="Document" URL="/&lt;vilib&gt;/rvi/Simulation/lvSimController.dll"/>
-					</Item>
-				</Item>
+				<Item Name="Dependencies" Type="Dependencies"/>
 				<Item Name="Build Specifications" Type="Build">
 					<Item Name="FPGA Main" Type="{F4C5E96F-7410-48A5-BB87-3559BC9B167F}">
 						<Property Name="AllowEnableRemoval" Type="Bool">false</Property>
@@ -1243,6 +1238,7 @@ InactivityTimeout 60
 		<Item Name="Load Epics Configuration.vi" Type="VI" URL="../support/Load Epics Configuration.vi"/>
 		<Item Name="Save Epics Configuration.vi" Type="VI" URL="../support/Save Epics Configuration.vi"/>
 		<Item Name="Calculate Array Position (SubVI).vi" Type="VI" URL="../support/Calculate Array Position (SubVI).vi"/>
+		<Item Name="Untitled 1.vi" Type="VI" URL="../support/Untitled 1.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Array Size(s)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Array Size(s)__ogtk.vi"/>
@@ -1429,6 +1425,9 @@ InactivityTimeout 60
 			</Item>
 			<Item Name="Global - RT Stream Connections.vi" Type="VI" URL="../Globals/Global - RT Stream Connections.vi"/>
 			<Item Name="Acquisition and Logging Configuration_old.ctl" Type="VI" URL="../controls/Acquisition and Logging Configuration_old.ctl"/>
+			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
