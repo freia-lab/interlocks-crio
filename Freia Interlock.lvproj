@@ -188,6 +188,7 @@ InactivityTimeout 60
 			<Item Name="Write to RT Error Log.vi" Type="VI" URL="../support/Write to RT Error Log.vi"/>
 		</Item>
 		<Item Name="RT Loops" Type="Folder">
+			<Item Name="RT Loop - EPICS Control.vi" Type="VI" URL="../RT Loops/RT Loop - EPICS Control.vi"/>
 			<Item Name="RT Loop - Interlock and Post Mortem Data.vi" Type="VI" URL="../RT Loops/RT Loop - Interlock and Post Mortem Data.vi"/>
 			<Item Name="RT Loop - System Health and FPGA Monitoring.vi" Type="VI" URL="../RT Loops/RT Loop - System Health and FPGA Monitoring.vi"/>
 			<Item Name="RT Loop - Watchdog.vi" Type="VI" URL="../RT Loops/RT Loop - Watchdog.vi"/>
@@ -1152,7 +1153,11 @@ InactivityTimeout 60
 					<Property Name="cRIOModule.Initial Line Direction" Type="Str">00000000000000000000000000000000</Property>
 					<Property Name="FPGA.PersistentID" Type="Str">{2CDAD35B-36DB-4F36-A16E-C029DDAAEC9B}</Property>
 				</Item>
-				<Item Name="Dependencies" Type="Dependencies"/>
+				<Item Name="Dependencies" Type="Dependencies">
+					<Item Name="vi.lib" Type="Folder">
+						<Item Name="lvSimController.dll" Type="Document" URL="/&lt;vilib&gt;/rvi/Simulation/lvSimController.dll"/>
+					</Item>
+				</Item>
 				<Item Name="Build Specifications" Type="Build">
 					<Item Name="FPGA Main" Type="{F4C5E96F-7410-48A5-BB87-3559BC9B167F}">
 						<Property Name="AllowEnableRemoval" Type="Bool">false</Property>
@@ -1234,11 +1239,9 @@ InactivityTimeout 60
 		<Item Name="RT Main.vi" Type="VI" URL="../RT Main.vi"/>
 		<Item Name="Variables.lvlib" Type="Library" URL="../Variables.lvlib"/>
 		<Item Name="RT Main FPGA Test.vi" Type="VI" URL="../RT Main FPGA Test.vi"/>
-		<Item Name="RT Loop - EPICS Control.vi" Type="VI" URL="../RT Loops/RT Loop - EPICS Control.vi"/>
 		<Item Name="Load Epics Configuration.vi" Type="VI" URL="../support/Load Epics Configuration.vi"/>
 		<Item Name="Save Epics Configuration.vi" Type="VI" URL="../support/Save Epics Configuration.vi"/>
 		<Item Name="Calculate Array Position (SubVI).vi" Type="VI" URL="../support/Calculate Array Position (SubVI).vi"/>
-		<Item Name="Untitled 1.vi" Type="VI" URL="../support/Untitled 1.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Array Size(s)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Array Size(s)__ogtk.vi"/>
@@ -1425,9 +1428,6 @@ InactivityTimeout 60
 			</Item>
 			<Item Name="Global - RT Stream Connections.vi" Type="VI" URL="../Globals/Global - RT Stream Connections.vi"/>
 			<Item Name="Acquisition and Logging Configuration_old.ctl" Type="VI" URL="../controls/Acquisition and Logging Configuration_old.ctl"/>
-			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
