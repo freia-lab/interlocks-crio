@@ -16,6 +16,7 @@
 	<Property Name="varPersistentID:{8FB9D805-1AD6-495A-8A19-C2AF43DB3137}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Actual Loop Period</Property>
 	<Property Name="varPersistentID:{9DE37EF7-5A19-4398-BE6E-1D682B5B1E5C}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Current State</Property>
 	<Property Name="varPersistentID:{9E4AC1C1-AA41-4E7D-90F0-DA95A6E3910B}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Force Trigger</Property>
+	<Property Name="varPersistentID:{BE06A365-AE07-4B1E-A5B9-983B41625DB9}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Reset Interlock</Property>
 	<Property Name="varPersistentID:{C86FD728-2C8B-4D3E-B8BA-B7389D205063}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/ADC Data</Property>
 	<Property Name="varPersistentID:{EE66E093-34A4-439E-B1ED-6D0D15CBADB2}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Cfg Channel Scale Array</Property>
 	<Property Name="varPersistentID:{F74DB48E-177C-4A44-92BD-74D62E74A1CD}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/ADCs Current Value</Property>
@@ -208,7 +209,6 @@ InactivityTimeout 60
 </CLIPDeclarationSet></Property>
 				<Property Name="NI.LV.FPGA.CompileConfigString" Type="Str">cRIO-9114/Clk40/falsefalseFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSCRIO_9114FPGA_TARGET_FAMILYVIRTEX5TARGET_TYPEFPGA</Property>
 				<Property Name="NI.LV.FPGA.Version" Type="Int">6</Property>
-				<Property Name="niFpga_TopLevelVIID" Type="Path">/C/Users/Marcus/Projekt/Freia/freia-interlocks-crio/FPGA Main.vi</Property>
 				<Property Name="Resource Name" Type="Str">RIO0</Property>
 				<Property Name="SWEmulationSubMode" Type="UInt">0</Property>
 				<Property Name="SWEmulationVIPath" Type="Path"></Property>
