@@ -8,6 +8,7 @@
 	<Property Name="varPersistentID:{16B9421D-665A-4811-843C-7B5264874CE6}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Cfg Nr Samples Post Trig</Property>
 	<Property Name="varPersistentID:{17E1E09B-D8D6-4E79-90EF-6212EBDBE761}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Arm</Property>
 	<Property Name="varPersistentID:{21649EBA-4F71-4D62-8941-FBBF0A6BCCC4}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/PM Array Number</Property>
+	<Property Name="varPersistentID:{34D99A65-28D9-440F-9ABF-A040DF614E82}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Threshold Triggered</Property>
 	<Property Name="varPersistentID:{54BC0E04-918C-4F93-B976-EEFD2C562932}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Cfg Input Active</Property>
 	<Property Name="varPersistentID:{559B6307-3129-406F-AF21-252679EB02E8}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Contiguous Memory</Property>
 	<Property Name="varPersistentID:{6D9AFA72-20D0-4D82-ACB7-45F159C038A5}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/PM Fetch Array</Property>
@@ -16,7 +17,10 @@
 	<Property Name="varPersistentID:{8FB9D805-1AD6-495A-8A19-C2AF43DB3137}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Actual Loop Period</Property>
 	<Property Name="varPersistentID:{9DE37EF7-5A19-4398-BE6E-1D682B5B1E5C}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Current State</Property>
 	<Property Name="varPersistentID:{9E4AC1C1-AA41-4E7D-90F0-DA95A6E3910B}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Force Trigger</Property>
+	<Property Name="varPersistentID:{A566942D-7B4E-4EDE-BAD6-90D948454BB2}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Triggered</Property>
+	<Property Name="varPersistentID:{A6B1A424-BF1A-4546-98BD-576D1AAE78C5}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Threshold Trigger Mask</Property>
 	<Property Name="varPersistentID:{BE06A365-AE07-4B1E-A5B9-983B41625DB9}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Reset Interlock</Property>
+	<Property Name="varPersistentID:{C72D944D-1AB3-407E-A755-1BD0553762FE}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Data Acq Stopped</Property>
 	<Property Name="varPersistentID:{C86FD728-2C8B-4D3E-B8BA-B7389D205063}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/ADC Data</Property>
 	<Property Name="varPersistentID:{EE66E093-34A4-439E-B1ED-6D0D15CBADB2}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Cfg Channel Scale Array</Property>
 	<Property Name="varPersistentID:{F74DB48E-177C-4A44-92BD-74D62E74A1CD}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/ADCs Current Value</Property>
@@ -1385,6 +1389,7 @@ InactivityTimeout 60
 		<Item Name="Start FPGA DMA.vi" Type="VI" URL="../support/Start FPGA DMA.vi"/>
 		<Item Name="FPGA Stop DMA.vi" Type="VI" URL="../support/FPGA Stop DMA.vi"/>
 		<Item Name="Intialize Shared Variable.vi" Type="VI" URL="../Shared Variables/Intialize Shared Variable.vi"/>
+		<Item Name="Poll Shared Variable.vi" Type="VI" URL="../support/Poll Shared Variable.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Array Size(s)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Array Size(s)__ogtk.vi"/>
@@ -1567,11 +1572,11 @@ InactivityTimeout 60
 			<Item Name="niwd4c.dll" Type="Document" URL="niwd4c.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Poll Epics Variables.vi" Type="VI" URL="../support/Poll Epics Variables.vi"/>
+			<Item Name="System Monitoring.vi" Type="VI" URL="../support/System Monitoring.vi"/>
 			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Poll Epics Variables.vi" Type="VI" URL="../support/Poll Epics Variables.vi"/>
-			<Item Name="System Monitoring.vi" Type="VI" URL="../support/System Monitoring.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="My Real-Time Application" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
@@ -1590,7 +1595,7 @@ InactivityTimeout 60
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{192AE867-C784-46E0-A200-C145409893B7}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/c/ni-rt/startup</Property>
-				<Property Name="Bld_version.build" Type="Int">5</Property>
+				<Property Name="Bld_version.build" Type="Int">7</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/c/ni-rt/startup/startup.rtexe</Property>
