@@ -20,8 +20,9 @@
 	<Property Name="varPersistentID:{A566942D-7B4E-4EDE-BAD6-90D948454BB2}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Triggered</Property>
 	<Property Name="varPersistentID:{A6B1A424-BF1A-4546-98BD-576D1AAE78C5}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Threshold Trigger Mask</Property>
 	<Property Name="varPersistentID:{BE06A365-AE07-4B1E-A5B9-983B41625DB9}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Reset Interlock</Property>
-	<Property Name="varPersistentID:{C72D944D-1AB3-407E-A755-1BD0553762FE}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Data Acq Stopped</Property>
+	<Property Name="varPersistentID:{C72D944D-1AB3-407E-A755-1BD0553762FE}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Data Acq Running</Property>
 	<Property Name="varPersistentID:{C86FD728-2C8B-4D3E-B8BA-B7389D205063}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/ADC Data</Property>
+	<Property Name="varPersistentID:{E6901AE2-0995-47FC-93AE-D183802A3621}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Interlock HB</Property>
 	<Property Name="varPersistentID:{EE66E093-34A4-439E-B1ED-6D0D15CBADB2}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Cfg Channel Scale Array</Property>
 	<Property Name="varPersistentID:{F74DB48E-177C-4A44-92BD-74D62E74A1CD}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/ADCs Current Value</Property>
 	<Property Name="varPersistentID:{FE4D7A60-CFFC-4F45-B507-C59504527128}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/CPU Usage</Property>
