@@ -1385,9 +1385,8 @@ InactivityTimeout 60
 				</Item>
 			</Item>
 		</Item>
-		<Item Name="RT Main.vi" Type="VI" URL="../RT Main.vi"/>
 		<Item Name="Variables.lvlib" Type="Library" URL="../Variables.lvlib"/>
-		<Item Name="RT Main FPGA Test.vi" Type="VI" URL="../RT Main FPGA Test.vi"/>
+		<Item Name="RT Main.vi" Type="VI" URL="../RT Main.vi"/>
 		<Item Name="Load Epics Configuration.vi" Type="VI" URL="../support/Load Epics Configuration.vi"/>
 		<Item Name="Save Epics Configuration.vi" Type="VI" URL="../support/Save Epics Configuration.vi"/>
 		<Item Name="Calculate Array Position (SubVI).vi" Type="VI" URL="../support/Calculate Array Position (SubVI).vi"/>
@@ -1615,7 +1614,7 @@ InactivityTimeout 60
 				<Property Name="Source[0].itemID" Type="Str">{665B3B8E-8BCA-4611-BB1A-C12A7EAC4A58}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/RT CompactRIO Target/RT Main FPGA Test.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/RT CompactRIO Target/RT Main.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
