@@ -10,6 +10,7 @@
 	<Property Name="varPersistentID:{1DFEE9C3-843D-4D59-A9C3-E54266FBFD13}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/DIN Triggered</Property>
 	<Property Name="varPersistentID:{1E54F8F7-E4E6-4D6B-9B70-89001F7FD9A8}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/ADC Mask</Property>
 	<Property Name="varPersistentID:{21649EBA-4F71-4D62-8941-FBBF0A6BCCC4}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/PM Array Number</Property>
+	<Property Name="varPersistentID:{32243913-690C-4EA8-B9C8-4FA99836BEBB}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/PM Set On</Property>
 	<Property Name="varPersistentID:{34D99A65-28D9-440F-9ABF-A040DF614E82}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Threshold Triggered</Property>
 	<Property Name="varPersistentID:{48C218AA-BA5C-4B12-AFEA-18F82D60F451}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/ADC Min Threshold</Property>
 	<Property Name="varPersistentID:{54BC0E04-918C-4F93-B976-EEFD2C562932}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Cfg Input Active</Property>
@@ -29,6 +30,7 @@
 	<Property Name="varPersistentID:{E6901AE2-0995-47FC-93AE-D183802A3621}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Interlock HB</Property>
 	<Property Name="varPersistentID:{EE66E093-34A4-439E-B1ED-6D0D15CBADB2}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Cfg Channel Scale Array</Property>
 	<Property Name="varPersistentID:{F74DB48E-177C-4A44-92BD-74D62E74A1CD}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/ADC Read Value</Property>
+	<Property Name="varPersistentID:{F8D8AA10-5680-4551-8E79-E7DA173C49C2}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/PM Set Off</Property>
 	<Property Name="varPersistentID:{FE4D7A60-CFFC-4F45-B507-C59504527128}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/CPU Usage</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="IOScan.Faults" Type="Str"></Property>
@@ -1600,7 +1602,7 @@ InactivityTimeout 60
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{192AE867-C784-46E0-A200-C145409893B7}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/c/ni-rt/startup</Property>
-				<Property Name="Bld_version.build" Type="Int">11</Property>
+				<Property Name="Bld_version.build" Type="Int">14</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/c/ni-rt/startup/startup.rtexe</Property>
