@@ -31,6 +31,7 @@
 	<Property Name="varPersistentID:{EE66E093-34A4-439E-B1ED-6D0D15CBADB2}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Cfg Channel Scale Array</Property>
 	<Property Name="varPersistentID:{F74DB48E-177C-4A44-92BD-74D62E74A1CD}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/ADC Read Value</Property>
 	<Property Name="varPersistentID:{F8D8AA10-5680-4551-8E79-E7DA173C49C2}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/PM Set Off</Property>
+	<Property Name="varPersistentID:{F9BE08B6-4D89-4699-8454-66CCBAFCA121}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/TimeStamp</Property>
 	<Property Name="varPersistentID:{FE4D7A60-CFFC-4F45-B507-C59504527128}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/CPU Usage</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="IOScan.Faults" Type="Str"></Property>
@@ -100,7 +101,7 @@
 	<Item Name="RT CompactRIO Target" Type="RT CompactRIO">
 		<Property Name="alias.name" Type="Str">RT CompactRIO Target</Property>
 		<Property Name="alias.value" Type="Str">192.168.10.30</Property>
-		<Property Name="CCSymbols" Type="Str">TARGET_TYPE,RT;OS,VxWorks;CPU,PowerPC;DeviceCode,7459;</Property>
+		<Property Name="CCSymbols" Type="Str">OS,VxWorks;CPU,PowerPC;DeviceCode,7459;TARGET_TYPE,RT;</Property>
 		<Property Name="crio.ControllerPID" Type="Str">7459</Property>
 		<Property Name="crio.family" Type="Str">901x</Property>
 		<Property Name="host.ResponsivenessCheckEnabled" Type="Bool">true</Property>
@@ -131,14 +132,16 @@
 		<Property Name="target.server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="target.server.control.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="target.server.tcp.access" Type="Str">+*</Property>
-		<Property Name="target.server.tcp.enabled" Type="Bool">false</Property>
+		<Property Name="target.server.tcp.enabled" Type="Bool">true</Property>
 		<Property Name="target.server.tcp.paranoid" Type="Bool">true</Property>
 		<Property Name="target.server.tcp.port" Type="Int">3363</Property>
-		<Property Name="target.server.tcp.serviceName" Type="Str">Main Application Instance/VI Server</Property>
+		<Property Name="target.server.tcp.serviceName" Type="Str"></Property>
 		<Property Name="target.server.tcp.serviceName.default" Type="Str">Main Application Instance/VI Server</Property>
 		<Property Name="target.server.vi.access" Type="Str">+*</Property>
 		<Property Name="target.server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="target.server.vi.propertiesEnabled" Type="Bool">true</Property>
+		<Property Name="target.server.viscripting.showScriptingOperationsInContextHelp" Type="Bool">false</Property>
+		<Property Name="target.server.viscripting.showScriptingOperationsInEditor" Type="Bool">false</Property>
 		<Property Name="target.WebServer.Config" Type="Str">NI.AddLVRouteVars
 NI.ServerName default
 DocumentRoot "$LVSERVER_DOCROOT"
@@ -1397,6 +1400,7 @@ InactivityTimeout 60
 		<Item Name="FPGA Stop DMA.vi" Type="VI" URL="../support/FPGA Stop DMA.vi"/>
 		<Item Name="Intialize Shared Variable.vi" Type="VI" URL="../Shared Variables/Intialize Shared Variable.vi"/>
 		<Item Name="Poll Shared Variable.vi" Type="VI" URL="../support/Poll Shared Variable.vi"/>
+		<Item Name="TimedLoopTest.vi" Type="VI" URL="../TimedLoopTest.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Array Size(s)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Array Size(s)__ogtk.vi"/>
@@ -1602,7 +1606,7 @@ InactivityTimeout 60
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{192AE867-C784-46E0-A200-C145409893B7}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/c/ni-rt/startup</Property>
-				<Property Name="Bld_version.build" Type="Int">14</Property>
+				<Property Name="Bld_version.build" Type="Int">16</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/c/ni-rt/startup/startup.rtexe</Property>
