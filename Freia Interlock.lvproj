@@ -17,18 +17,17 @@
 	<Property Name="varPersistentID:{559B6307-3129-406F-AF21-252679EB02E8}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Contiguous Memory</Property>
 	<Property Name="varPersistentID:{5DC3C4A8-DDB1-4AE8-9FB8-C4375AEB9947}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/ADC Max Threshold</Property>
 	<Property Name="varPersistentID:{6D9AFA72-20D0-4D82-ACB7-45F159C038A5}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/PM Fetch Array</Property>
-	<Property Name="varPersistentID:{7533BBE6-2FF0-4662-B396-2E1E9B424B22}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Cfg Data Rate</Property>
+	<Property Name="varPersistentID:{7533BBE6-2FF0-4662-B396-2E1E9B424B22}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Curr Data Rate</Property>
 	<Property Name="varPersistentID:{78840EBD-E1DA-4A45-A6B3-185B377540D1}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/PM Array</Property>
 	<Property Name="varPersistentID:{8FB9D805-1AD6-495A-8A19-C2AF43DB3137}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Actual Loop Period</Property>
-	<Property Name="varPersistentID:{9DE37EF7-5A19-4398-BE6E-1D682B5B1E5C}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Current State</Property>
 	<Property Name="varPersistentID:{9E4AC1C1-AA41-4E7D-90F0-DA95A6E3910B}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Force Trigger</Property>
 	<Property Name="varPersistentID:{A566942D-7B4E-4EDE-BAD6-90D948454BB2}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Triggered</Property>
 	<Property Name="varPersistentID:{A6B1A424-BF1A-4546-98BD-576D1AAE78C5}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Threshold Trigger Mask</Property>
+	<Property Name="varPersistentID:{B626BCB1-F039-48D3-A5E0-E8DE96DED579}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Curr Nr Samples Post Trig</Property>
 	<Property Name="varPersistentID:{BE06A365-AE07-4B1E-A5B9-983B41625DB9}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Reset Interlock</Property>
 	<Property Name="varPersistentID:{C72D944D-1AB3-407E-A755-1BD0553762FE}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Data Acq Running</Property>
 	<Property Name="varPersistentID:{E28EDF9E-88D0-448E-A7A0-F484D78EE5EA}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/ADC Triggered</Property>
 	<Property Name="varPersistentID:{E6901AE2-0995-47FC-93AE-D183802A3621}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Interlock HB</Property>
-	<Property Name="varPersistentID:{EE66E093-34A4-439E-B1ED-6D0D15CBADB2}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Cfg Channel Scale Array</Property>
 	<Property Name="varPersistentID:{F74DB48E-177C-4A44-92BD-74D62E74A1CD}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/ADC Read Value</Property>
 	<Property Name="varPersistentID:{F8D8AA10-5680-4551-8E79-E7DA173C49C2}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/PM Set Off</Property>
 	<Property Name="varPersistentID:{F9BE08B6-4D89-4699-8454-66CCBAFCA121}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/TimeStamp</Property>
@@ -1606,7 +1605,7 @@ InactivityTimeout 60
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{192AE867-C784-46E0-A200-C145409893B7}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/c/ni-rt/startup</Property>
-				<Property Name="Bld_version.build" Type="Int">16</Property>
+				<Property Name="Bld_version.build" Type="Int">18</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/c/ni-rt/startup/startup.rtexe</Property>
