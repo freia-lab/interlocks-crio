@@ -1585,9 +1585,6 @@ InactivityTimeout 60
 			</Item>
 			<Item Name="Poll Epics Variables.vi" Type="VI" URL="../support/Poll Epics Variables.vi"/>
 			<Item Name="System Monitoring.vi" Type="VI" URL="../support/System Monitoring.vi"/>
-			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="My Real-Time Application" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
