@@ -1397,7 +1397,7 @@ InactivityTimeout 60
 		<Item Name="Calculate Array Position (SubVI).vi" Type="VI" URL="../support/Calculate Array Position (SubVI).vi"/>
 		<Item Name="Initialize FPGA.vi" Type="VI" URL="../support/Initialize FPGA.vi"/>
 		<Item Name="Start FPGA DMA.vi" Type="VI" URL="../support/Start FPGA DMA.vi"/>
-		<Item Name="FPGA Stop DMA.vi" Type="VI" URL="../support/FPGA Stop DMA.vi"/>
+		<Item Name="Stop FPGA DMA.vi" Type="VI" URL="../support/Stop FPGA DMA.vi"/>
 		<Item Name="Intialize Shared Variable.vi" Type="VI" URL="../Shared Variables/Intialize Shared Variable.vi"/>
 		<Item Name="Poll Shared Variable.vi" Type="VI" URL="../support/Poll Shared Variable.vi"/>
 		<Item Name="TimedLoopTest.vi" Type="VI" URL="../TimedLoopTest.vi"/>
@@ -1585,6 +1585,9 @@ InactivityTimeout 60
 			</Item>
 			<Item Name="Poll Epics Variables.vi" Type="VI" URL="../support/Poll Epics Variables.vi"/>
 			<Item Name="System Monitoring.vi" Type="VI" URL="../support/System Monitoring.vi"/>
+			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="My Real-Time Application" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
@@ -1603,7 +1606,7 @@ InactivityTimeout 60
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{192AE867-C784-46E0-A200-C145409893B7}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/c/ni-rt/startup</Property>
-				<Property Name="Bld_version.build" Type="Int">18</Property>
+				<Property Name="Bld_version.build" Type="Int">20</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/c/ni-rt/startup/startup.rtexe</Property>
