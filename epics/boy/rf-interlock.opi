@@ -3,7 +3,7 @@
   <auto_zoom_to_fit_all>false</auto_zoom_to_fit_all>
   <macros>
     <include_parent_macros>true</include_parent_macros>
-    <P></P>
+    <P>IntlkF-cRio1</P>
   </macros>
   <wuid>-14a921ec:134b2495e46:-7f53</wuid>
   <boy_version>3.2.0.codac_core_4_1_0</boy_version>
@@ -1118,7 +1118,7 @@ $(pv_value)</tooltip>
       <visible>true</visible>
       <wuid>778321cc:14b3b2aebfa:-16fa</wuid>
       <scripts />
-      <height>121</height>
+      <height>141</height>
       <name>Digital Inputs</name>
       <scale_options>
         <width_scalable>true</width_scalable>
@@ -1277,11 +1277,11 @@ $(pv_value)</tooltip>
         </foreground_color>
         <widget_type>Label</widget_type>
         <enabled>false</enabled>
-        <text>Mask</text>
+        <text>Unmask bits</text>
         <font>
           <opifont.name fontName="arial" height="10" style="0">IO Normal</opifont.name>
         </font>
-        <width>32</width>
+        <width>74</width>
         <border_style>0</border_style>
         <rules />
         <border_width>2</border_width>
@@ -1438,6 +1438,110 @@ $(pv_value)</tooltip>
 $(pv_value)</tooltip>
           <x>16</x>
         </widget>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.ActionButton" version="2.0.0">
+        <border_alarm_sensitive>true</border_alarm_sensitive>
+        <visible>true</visible>
+        <wuid>6bc625c4:14f3be44842:-6634</wuid>
+        <scripts />
+        <height>25</height>
+        <style>1</style>
+        <name>Action Button Template</name>
+        <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <pv_name></pv_name>
+        <background_color>
+          <color name="IO Button" red="178" green="178" blue="178" />
+        </background_color>
+        <foreground_color>
+          <color name="IO Foreground" red="0" green="0" blue="0" />
+        </foreground_color>
+        <widget_type>Action Button</widget_type>
+        <enabled>true</enabled>
+        <text>7</text>
+        <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+        <font>
+          <opifont.name fontName="arial" height="10" style="1">IO Input 1</opifont.name>
+        </font>
+        <width>25</width>
+        <border_style>6</border_style>
+        <push_action_index>0</push_action_index>
+        <image></image>
+        <rules />
+        <pv_value />
+        <toggle_button>false</toggle_button>
+        <border_width>2</border_width>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215" />
+        </border_color>
+        <y>87</y>
+        <actions hook="false" hook_all="true">
+          <action type="OPEN_OPI_IN_VIEW">
+            <path>Slow_inerlocks.opi</path>
+            <macros>
+              <include_parent_macros>true</include_parent_macros>
+              <P>LLRF-Cntrl:SlowIntlk</P>
+              <B0>FREIA Bunker Door Open</B0>
+              <B1>n.u.</B1>
+              <B2>n.u.</B2>
+              <B3></B3>
+              <B4></B4>
+              <B5></B5>
+              <B6></B6>
+              <B7></B7>
+            </macros>
+            <Position>4</Position>
+            <description>SHow details</description>
+          </action>
+        </actions>
+        <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+        <x>311</x>
+      </widget>
+      <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+        <visible>true</visible>
+        <vertical_alignment>1</vertical_alignment>
+        <wuid>6bc625c4:14f3be44842:-65e0</wuid>
+        <auto_size>true</auto_size>
+        <scripts />
+        <height>16</height>
+        <name>Label Template_2</name>
+        <scale_options>
+          <width_scalable>true</width_scalable>
+          <height_scalable>true</height_scalable>
+          <keep_wh_ratio>false</keep_wh_ratio>
+        </scale_options>
+        <transparent>true</transparent>
+        <show_scrollbar>false</show_scrollbar>
+        <background_color>
+          <color name="IO Background" red="255" green="255" blue="205" />
+        </background_color>
+        <foreground_color>
+          <color name="IO Text Fg" red="0" green="32" blue="92" />
+        </foreground_color>
+        <widget_type>Label</widget_type>
+        <enabled>false</enabled>
+        <text>Details</text>
+        <font>
+          <opifont.name fontName="arial" height="10" style="0">IO Normal</opifont.name>
+        </font>
+        <width>41</width>
+        <border_style>0</border_style>
+        <rules />
+        <border_width>2</border_width>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215" />
+        </border_color>
+        <horizontal_alignment>0</horizontal_alignment>
+        <actions hook="false" hook_all="false" />
+        <y>92</y>
+        <wrap_words>true</wrap_words>
+        <tooltip></tooltip>
+        <x>90</x>
       </widget>
     </widget>
   </widget>
