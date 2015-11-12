@@ -25,6 +25,8 @@
 	<Property Name="varPersistentID:{9E4AC1C1-AA41-4E7D-90F0-DA95A6E3910B}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Force Trigger</Property>
 	<Property Name="varPersistentID:{A566942D-7B4E-4EDE-BAD6-90D948454BB2}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Triggered</Property>
 	<Property Name="varPersistentID:{A6B1A424-BF1A-4546-98BD-576D1AAE78C5}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Threshold Trigger Mask</Property>
+	<Property Name="varPersistentID:{B2A182A9-C494-4578-A65D-08D75A061124}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/DIN Mod4 Triggered</Property>
+	<Property Name="varPersistentID:{B47FBF1E-D663-4204-AE12-67BF33A875B4}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Cfg Input Active Mod4</Property>
 	<Property Name="varPersistentID:{BE06A365-AE07-4B1E-A5B9-983B41625DB9}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Reset Interlock</Property>
 	<Property Name="varPersistentID:{C72D944D-1AB3-407E-A755-1BD0553762FE}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Data Acq Running</Property>
 	<Property Name="varPersistentID:{E28EDF9E-88D0-448E-A7A0-F484D78EE5EA}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/ADC Triggered</Property>
