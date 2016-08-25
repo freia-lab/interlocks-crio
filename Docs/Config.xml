@@ -6,9 +6,9 @@
 <NumElts>5</NumElts>
 <Cluster>
 <Name>Epics Configuration</Name>
-<NumElts>7</NumElts>
+<NumElts>14</NumElts>
 <Array>
-<Name>DIN Mask</Name>
+<Name>DIN1 Mask Out1</Name>
 <Dimsize>2</Dimsize>
 <Boolean>
 <Name>Boolean</Name>
@@ -63,10 +63,50 @@
 <Val>1</Val>
 </Boolean>
 </Array>
+<Array>
+<Name>DIN1 Mask Out2</Name>
+<Dimsize>1</Dimsize>
+<Boolean>
+<Name>Boolean</Name>
+<Val>1</Val>
+</Boolean>
+</Array>
+<Array>
+<Name>DIN1 Mask Out3</Name>
+<Dimsize>0</Dimsize>
+<Boolean>
+<Name>Boolean</Name>
+<Val></Val>
+</Boolean>
+</Array>
+<Array>
+<Name>DIN1 Mask Out4</Name>
+<Dimsize>0</Dimsize>
+<Boolean>
+<Name>Boolean</Name>
+<Val></Val>
+</Boolean>
+</Array>
+<Boolean>
+<Name>Out3 Armed</Name>
+<Val>1</Val>
+</Boolean>
+<Boolean>
+<Name>Out1 Armed</Name>
+<Val>1</Val>
+</Boolean>
+<Boolean>
+<Name>Out4 Armed</Name>
+<Val>0</Val>
+</Boolean>
+<Boolean>
+<Name>Out2 Armed</Name>
+<Val>0</Val>
+</Boolean>
 </Cluster>
 <String>
 <Name>Epics Configuration File</Name>
-<Val>/EpicsConfig.cfg</Val>
+<Val>C:\Users\admin\Desktop\EpicsConfig.cfg</Val>
 </String>
 <U8>
 <Name>Number of Channels</Name>
