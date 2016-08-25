@@ -1406,6 +1406,8 @@ InactivityTimeout 60
 		<Item Name="Stop FPGA DMA.vi" Type="VI" URL="../support/Stop FPGA DMA.vi"/>
 		<Item Name="Intialize Shared Variable.vi" Type="VI" URL="../Shared Variables/Intialize Shared Variable.vi"/>
 		<Item Name="Poll Shared Variable.vi" Type="VI" URL="../support/Poll Shared Variable.vi"/>
+		<Item Name="Config.xml" Type="Document" URL="../Config/Config.xml"/>
+		<Item Name="EpicsConfig.cfg" Type="Document" URL="../Config/EpicsConfig.cfg"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Array Size(s)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Array Size(s)__ogtk.vi"/>
@@ -1611,7 +1613,7 @@ InactivityTimeout 60
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{192AE867-C784-46E0-A200-C145409893B7}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/c/ni-rt/startup</Property>
-				<Property Name="Bld_version.build" Type="Int">32</Property>
+				<Property Name="Bld_version.build" Type="Int">33</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/c/ni-rt/startup/startup.rtexe</Property>
@@ -1621,14 +1623,23 @@ InactivityTimeout 60
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">/c/ni-rt/startup/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
-				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{45AD6BCA-5C9E-4A80-8B96-3E1B5C6FC5F4}</Property>
+				<Property Name="Destination[2].destName" Type="Str">root directory</Property>
+				<Property Name="Destination[2].path" Type="Path">/c</Property>
+				<Property Name="Destination[2].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="DestinationCount" Type="Int">3</Property>
+				<Property Name="Source[0].itemID" Type="Str">{FC566312-317C-4995-9E20-5870357A31F9}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/RT CompactRIO Target/RT Main.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">2</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/RT CompactRIO Target/Config.xml</Property>
+				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[3].destinationIndex" Type="Int">2</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/RT CompactRIO Target/EpicsConfig.cfg</Property>
+				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="SourceCount" Type="Int">4</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">My Real-Time Application</Property>
 				<Property Name="TgtF_internalName" Type="Str">My Real-Time Application</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2015 </Property>
