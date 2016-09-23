@@ -1,4 +1,4 @@
-<?xml version='1.0' standalone='yes' ?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <LVData xmlns="http://www.ni.com/LVData">
 <Version>14.0f1</Version>
 <Cluster>
@@ -32,7 +32,7 @@
 <Dimsize>0</Dimsize>
 <Boolean>
 <Name>Boolean</Name>
-<Val></Val>
+<Val/>
 </Boolean>
 </Array>
 <Array>
@@ -40,7 +40,7 @@
 <Dimsize>0</Dimsize>
 <DBL>
 <Name>Threshold</Name>
-<Val></Val>
+<Val/>
 </DBL>
 </Array>
 <Array>
@@ -48,7 +48,7 @@
 <Dimsize>0</Dimsize>
 <DBL>
 <Name>Threshold</Name>
-<Val></Val>
+<Val/>
 </DBL>
 </Array>
 <Array>
@@ -76,7 +76,7 @@
 <Dimsize>0</Dimsize>
 <Boolean>
 <Name>Boolean</Name>
-<Val></Val>
+<Val/>
 </Boolean>
 </Array>
 <Array>
@@ -84,7 +84,7 @@
 <Dimsize>0</Dimsize>
 <Boolean>
 <Name>Boolean</Name>
-<Val></Val>
+<Val/>
 </Boolean>
 </Array>
 <Boolean>
