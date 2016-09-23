@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version='1.0' standalone='yes' ?>
 <LVData xmlns="http://www.ni.com/LVData">
 <Version>14.0f1</Version>
 <Cluster>
@@ -12,11 +12,11 @@
 <Dimsize>2</Dimsize>
 <Boolean>
 <Name>Boolean</Name>
-<Val>1</Val>
+<Val>0</Val>
 </Boolean>
 <Boolean>
 <Name>Boolean</Name>
-<Val>1</Val>
+<Val>0</Val>
 </Boolean>
 </Array>
 <U32>
@@ -32,7 +32,7 @@
 <Dimsize>0</Dimsize>
 <Boolean>
 <Name>Boolean</Name>
-<Val/>
+<Val></Val>
 </Boolean>
 </Array>
 <Array>
@@ -40,7 +40,7 @@
 <Dimsize>0</Dimsize>
 <DBL>
 <Name>Threshold</Name>
-<Val/>
+<Val></Val>
 </DBL>
 </Array>
 <Array>
@@ -48,7 +48,7 @@
 <Dimsize>0</Dimsize>
 <DBL>
 <Name>Threshold</Name>
-<Val/>
+<Val></Val>
 </DBL>
 </Array>
 <Array>
@@ -56,19 +56,19 @@
 <Dimsize>2</Dimsize>
 <Boolean>
 <Name>Boolean</Name>
-<Val>1</Val>
+<Val>0</Val>
 </Boolean>
 <Boolean>
 <Name>Boolean</Name>
-<Val>1</Val>
+<Val>0</Val>
 </Boolean>
 </Array>
 <Array>
 <Name>DIN1 Mask Out2</Name>
-<Dimsize>1</Dimsize>
+<Dimsize>0</Dimsize>
 <Boolean>
 <Name>Boolean</Name>
-<Val>1</Val>
+<Val></Val>
 </Boolean>
 </Array>
 <Array>
@@ -76,7 +76,7 @@
 <Dimsize>0</Dimsize>
 <Boolean>
 <Name>Boolean</Name>
-<Val/>
+<Val></Val>
 </Boolean>
 </Array>
 <Array>
@@ -84,12 +84,12 @@
 <Dimsize>0</Dimsize>
 <Boolean>
 <Name>Boolean</Name>
-<Val/>
+<Val></Val>
 </Boolean>
 </Array>
 <Boolean>
 <Name>Out3 Armed</Name>
-<Val>1</Val>
+<Val>0</Val>
 </Boolean>
 <Boolean>
 <Name>Out1 Armed</Name>
@@ -101,12 +101,12 @@
 </Boolean>
 <Boolean>
 <Name>Out2 Armed</Name>
-<Val>0</Val>
+<Val>1</Val>
 </Boolean>
 </Cluster>
 <String>
 <Name>Epics Configuration File</Name>
-<Val>C:\Users\admin\Desktop\EpicsConfig.cfg</Val>
+<Val>/EpicsConfig.cfg</Val>
 </String>
 <U8>
 <Name>Number of Channels</Name>

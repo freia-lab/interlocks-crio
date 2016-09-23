@@ -35,6 +35,7 @@
 	<Property Name="varPersistentID:{81AC2AE9-CF1A-4CF7-96D6-5DE17DBF474C}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/TimeStamp Out4</Property>
 	<Property Name="varPersistentID:{82EC833C-87AF-4F81-870D-51E2CDA4AAC1}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/DIN1 TrigMask Out4</Property>
 	<Property Name="varPersistentID:{8FB9D805-1AD6-495A-8A19-C2AF43DB3137}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Actual Loop Period</Property>
+	<Property Name="varPersistentID:{937A41A2-592C-475C-8363-4E3BB2E0634B}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/TimeStamp</Property>
 	<Property Name="varPersistentID:{9CC9C7C0-3D0B-496D-8CDB-A7DB1C3A0A1E}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/DIN1 Mask Out4</Property>
 	<Property Name="varPersistentID:{9E4AC1C1-AA41-4E7D-90F0-DA95A6E3910B}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Force Trigger</Property>
 	<Property Name="varPersistentID:{A2341828-5B2B-4AEE-8361-07C18E4FA056}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Rst Intrlk Out2</Property>
@@ -245,7 +246,6 @@ InactivityTimeout 60
 </CLIPDeclarationSet></Property>
 				<Property Name="NI.LV.FPGA.CompileConfigString" Type="Str">cRIO-9114/Clk40/falsefalseFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSCRIO_9114FPGA_TARGET_FAMILYVIRTEX5TARGET_TYPEFPGA</Property>
 				<Property Name="NI.LV.FPGA.Version" Type="Int">6</Property>
-				<Property Name="niFpga_TopLevelVIID" Type="Path">/C/Users/Public/cRIO/FPGA Main.vi</Property>
 				<Property Name="Resource Name" Type="Str">RIO0</Property>
 				<Property Name="SWEmulationSubMode" Type="UInt">0</Property>
 				<Property Name="SWEmulationVIPath" Type="Path"></Property>
@@ -1441,6 +1441,8 @@ InactivityTimeout 60
 		<Item Name="Poll Shared Variable.vi" Type="VI" URL="../support/Poll Shared Variable.vi"/>
 		<Item Name="Poll Epics Array.vi" Type="VI" URL="../support/Poll Epics Array.vi"/>
 		<Item Name="Enque Epics Message Int.vi" Type="VI" URL="../support/Enque Epics Message Int.vi"/>
+		<Item Name="Config.xml" Type="Document" URL="../Config/Config.xml"/>
+		<Item Name="EpicsConfig.cfg" Type="Document" URL="../Config/EpicsConfig.cfg"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Array Size(s)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Array Size(s)__ogtk.vi"/>
@@ -1648,7 +1650,7 @@ InactivityTimeout 60
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{192AE867-C784-46E0-A200-C145409893B7}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/c/ni-rt/startup</Property>
-				<Property Name="Bld_version.build" Type="Int">32</Property>
+				<Property Name="Bld_version.build" Type="Int">42</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/c/ni-rt/startup/startup.rtexe</Property>
@@ -1658,14 +1660,23 @@ InactivityTimeout 60
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">/c/ni-rt/startup/data</Property>
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
-				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{45AD6BCA-5C9E-4A80-8B96-3E1B5C6FC5F4}</Property>
+				<Property Name="Destination[2].destName" Type="Str">root directory</Property>
+				<Property Name="Destination[2].path" Type="Path">/c</Property>
+				<Property Name="Destination[2].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="DestinationCount" Type="Int">3</Property>
+				<Property Name="Source[0].itemID" Type="Str">{CC644CCB-13C3-4735-9266-19D6A589AE02}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/RT CompactRIO Target/RT Main.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">2</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/RT CompactRIO Target/Config.xml</Property>
+				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[3].destinationIndex" Type="Int">2</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/RT CompactRIO Target/EpicsConfig.cfg</Property>
+				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="SourceCount" Type="Int">4</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">My Real-Time Application</Property>
 				<Property Name="TgtF_internalName" Type="Str">My Real-Time Application</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2015 </Property>
