@@ -6,7 +6,7 @@
 <NumElts>5</NumElts>
 <Cluster>
 <Name>Epics Configuration</Name>
-<NumElts>14</NumElts>
+<NumElts>21</NumElts>
 <Array>
 <Name>DIN1 Mask Out1</Name>
 <Dimsize>2</Dimsize>
@@ -52,18 +52,6 @@
 </DBL>
 </Array>
 <Array>
-<Name>DIN Mask 2</Name>
-<Dimsize>2</Dimsize>
-<Boolean>
-<Name>Boolean</Name>
-<Val>0</Val>
-</Boolean>
-<Boolean>
-<Name>Boolean</Name>
-<Val>0</Val>
-</Boolean>
-</Array>
-<Array>
 <Name>DIN1 Mask Out2</Name>
 <Dimsize>0</Dimsize>
 <Boolean>
@@ -103,6 +91,74 @@
 <Name>Out2 Armed</Name>
 <Val>1</Val>
 </Boolean>
+<Array>
+<Name>DIN2 Mask Out1</Name>
+<Dimsize>2</Dimsize>
+<Boolean>
+<Name>Boolean</Name>
+<Val>0</Val>
+</Boolean>
+<Boolean>
+<Name>Boolean</Name>
+<Val>0</Val>
+</Boolean>
+</Array>
+<Array>
+<Name>DIN2 Mask Out2</Name>
+<Dimsize>0</Dimsize>
+<Boolean>
+<Name>Boolean</Name>
+<Val></Val>
+</Boolean>
+</Array>
+<Array>
+<Name>DIN2 Mask Out3</Name>
+<Dimsize>0</Dimsize>
+<Boolean>
+<Name>Boolean</Name>
+<Val></Val>
+</Boolean>
+</Array>
+<Array>
+<Name>DIN2 Mask Out4</Name>
+<Dimsize>0</Dimsize>
+<Boolean>
+<Name>Boolean</Name>
+<Val></Val>
+</Boolean>
+</Array>
+<Array>
+<Name>DIN3 Mask Out1</Name>
+<Dimsize>0</Dimsize>
+<Boolean>
+<Name>Boolean</Name>
+<Val></Val>
+</Boolean>
+</Array>
+<Array>
+<Name>DIN3 Mask Out2</Name>
+<Dimsize>0</Dimsize>
+<Boolean>
+<Name>Boolean</Name>
+<Val></Val>
+</Boolean>
+</Array>
+<Array>
+<Name>DIN3 Mask Out3</Name>
+<Dimsize>0</Dimsize>
+<Boolean>
+<Name>Boolean</Name>
+<Val></Val>
+</Boolean>
+</Array>
+<Array>
+<Name>DIN3 Mask Out4</Name>
+<Dimsize>0</Dimsize>
+<Boolean>
+<Name>Boolean</Name>
+<Val></Val>
+</Boolean>
+</Array>
 </Cluster>
 <String>
 <Name>Epics Configuration File</Name>
