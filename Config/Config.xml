@@ -6,7 +6,7 @@
 <NumElts>5</NumElts>
 <Cluster>
 <Name>Epics Configuration</Name>
-<NumElts>21</NumElts>
+<NumElts>24</NumElts>
 <Array>
 <Name>DIN1 Mask Out1</Name>
 <Dimsize>2</Dimsize>
@@ -28,7 +28,7 @@
 <Val>1</Val>
 </Boolean>
 <Array>
-<Name>ADC Mask</Name>
+<Name>ADC Mask Out1</Name>
 <Dimsize>0</Dimsize>
 <Boolean>
 <Name>Boolean</Name>
@@ -153,6 +153,30 @@
 </Array>
 <Array>
 <Name>DIN3 Mask Out4</Name>
+<Dimsize>0</Dimsize>
+<Boolean>
+<Name>Boolean</Name>
+<Val></Val>
+</Boolean>
+</Array>
+<Array>
+<Name>ADC Mask Out2</Name>
+<Dimsize>0</Dimsize>
+<Boolean>
+<Name>Boolean</Name>
+<Val></Val>
+</Boolean>
+</Array>
+<Array>
+<Name>ADC Mask Out3</Name>
+<Dimsize>0</Dimsize>
+<Boolean>
+<Name>Boolean</Name>
+<Val></Val>
+</Boolean>
+</Array>
+<Array>
+<Name>ADC Mask Out4</Name>
 <Dimsize>0</Dimsize>
 <Boolean>
 <Name>Boolean</Name>
