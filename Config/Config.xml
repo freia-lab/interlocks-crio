@@ -6,7 +6,7 @@
 <NumElts>5</NumElts>
 <Cluster>
 <Name>Epics Configuration</Name>
-<NumElts>24</NumElts>
+<NumElts>23</NumElts>
 <Array>
 <Name>DIN1 Mask Out1</Name>
 <Dimsize>2</Dimsize>
@@ -23,10 +23,6 @@
 <Name># Samples Post Trig</Name>
 <Val>10</Val>
 </U32>
-<Boolean>
-<Name>Armed</Name>
-<Val>1</Val>
-</Boolean>
 <Array>
 <Name>ADC Mask Out1</Name>
 <Dimsize>0</Dimsize>
