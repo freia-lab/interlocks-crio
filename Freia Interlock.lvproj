@@ -24,11 +24,12 @@
 	<Property Name="varPersistentID:{4AF16F57-5476-4BC7-B1B4-F900B90216D3}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Curr Buffer Size</Property>
 	<Property Name="varPersistentID:{4EE41201-B608-4F0A-9093-3C5B6BF93A1B}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/DIN2 TrigMask Out1</Property>
 	<Property Name="varPersistentID:{54BC0E04-918C-4F93-B976-EEFD2C562932}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/DIN1 Mask Out1</Property>
-	<Property Name="varPersistentID:{559B6307-3129-406F-AF21-252679EB02E8}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Contiguous Memory</Property>
+	<Property Name="varPersistentID:{559B6307-3129-406F-AF21-252679EB02E8}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Free Memory</Property>
 	<Property Name="varPersistentID:{56FB3277-9954-4B89-A158-95F05AA13E7A}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/DIN1 TrigMask Out2</Property>
 	<Property Name="varPersistentID:{58993458-41F7-47D9-969D-F763745C1012}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/DIN3 Mask Out3</Property>
 	<Property Name="varPersistentID:{5ADD1D6B-8E00-4BFA-96D9-74AD98F10DE1}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/ADC Mask Out4</Property>
 	<Property Name="varPersistentID:{5AE89D56-8BB2-4D50-B1EF-8E6D54B6EE47}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Rst Intrlk Out4</Property>
+	<Property Name="varPersistentID:{5D3BD383-05AB-4639-B164-77880B20F333}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Total Memory</Property>
 	<Property Name="varPersistentID:{5DC3C4A8-DDB1-4AE8-9FB8-C4375AEB9947}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/ADC Max Threshold</Property>
 	<Property Name="varPersistentID:{655556E7-05F7-41F8-A7DC-B63B951F86AA}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/DIN3 TrigMask Out4</Property>
 	<Property Name="varPersistentID:{6A633A32-1839-4C7E-80DD-BDB6F244D280}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/DIN3 TrigMask Out2</Property>
@@ -45,6 +46,7 @@
 	<Property Name="varPersistentID:{82EC833C-87AF-4F81-870D-51E2CDA4AAC1}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/DIN1 TrigMask Out4</Property>
 	<Property Name="varPersistentID:{8FB9D805-1AD6-495A-8A19-C2AF43DB3137}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Actual Loop Period</Property>
 	<Property Name="varPersistentID:{9147108F-18ED-4B97-88EB-2F8758038F1A}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/DIN3 TrigMask Out3</Property>
+	<Property Name="varPersistentID:{92CF74D0-1061-4705-8A6B-2AD5FBF4DA6B}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/PM Array Nb Activ</Property>
 	<Property Name="varPersistentID:{9311EDA9-42DB-4C4B-84E2-68CB031475F4}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/DIN3 Mask Out1</Property>
 	<Property Name="varPersistentID:{937A41A2-592C-475C-8363-4E3BB2E0634B}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/TimeStamp</Property>
 	<Property Name="varPersistentID:{93BCD4D8-BAC8-44BC-B0CD-4CA6AB1A4243}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/DIN2 Mask Out3</Property>
@@ -2018,10 +2020,10 @@ InactivityTimeout 60
 			<Item Name="System Monitoring.vi" Type="VI" URL="../support/System Monitoring.vi"/>
 			<Item Name="Enque Epics Message Bool Array.vi" Type="VI" URL="../support/Enque Epics Message Bool Array.vi"/>
 			<Item Name="Enque Epics Message Double Array.vi" Type="VI" URL="../support/Enque Epics Message Double Array.vi"/>
+			<Item Name="FreiaInterlock_FPGATarget_FPGAMain_d9emsL9JL5U.lvbitx" Type="Document" URL="../FPGA Bitfiles/FreiaInterlock_FPGATarget_FPGAMain_d9emsL9JL5U.lvbitx"/>
 			<Item Name="nisyscfg.dll" Type="Document" URL="nisyscfg.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="FreiaInterlock_FPGATarget_FPGAMain_d9emsL9JL5U.lvbitx" Type="Document" URL="../FPGA Bitfiles/FreiaInterlock_FPGATarget_FPGAMain_d9emsL9JL5U.lvbitx"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="cRIO Interlock" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
