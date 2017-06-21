@@ -4,6 +4,7 @@
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
 	<Property Name="varPersistentID:{06106C3D-FBE7-491C-AC10-EF39403859A7}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/System Time</Property>
+	<Property Name="varPersistentID:{086DE7CC-59D4-49FE-8138-97D03B62B429}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/MemoryBlock</Property>
 	<Property Name="varPersistentID:{105622FC-1BF1-406C-B098-48E42582E621}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Out1 Armed</Property>
 	<Property Name="varPersistentID:{10AED114-B6A8-45F1-9B2D-6BEDEECD1F17}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/DIN1 TrigMask Out3</Property>
 	<Property Name="varPersistentID:{132775EB-F929-4D19-B4BE-3116973A4E07}" Type="Ref">/RT CompactRIO Target/Variables.lvlib/Cfg Update</Property>
@@ -2041,7 +2042,7 @@ InactivityTimeout 60
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{192AE867-C784-46E0-A200-C145409893B7}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/c/ni-rt/startup</Property>
-				<Property Name="Bld_version.build" Type="Int">78</Property>
+				<Property Name="Bld_version.build" Type="Int">80</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/c/ni-rt/startup/startup.rtexe</Property>
